@@ -22,11 +22,17 @@ public abstract class Usuario {
     }
 
     public void exibirInformacoes() {
+        System.out.println("\n--Informações do Usuário--\n");
         System.out.println("Nome: " + nome);
         System.out.println("Email: " + email);
         System.out.println("Telefone: " + telefone);
         System.out.println("Bairro: " + bairro);
         System.out.println("Saldo da Carteira: R$ " + saldoCarteira);
+        System.out.println("\n---------------------------\n");
+    }
+
+    public void exibirSaldo() {
+        System.out.println("\nSaldo da Carteira de " + nome + ": R$ " + saldoCarteira + "\n");
     }
 
     public boolean autenticar(String email, String senha) {
